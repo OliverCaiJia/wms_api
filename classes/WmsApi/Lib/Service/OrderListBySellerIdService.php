@@ -1,0 +1,47 @@
+<?php
+namespace WmsApi\Lib\Service;
+
+use WmsApi\Lib\Constant\ServiceName;
+use WmsApi\Lib\Model\Order;
+use WmsApi\Lib\Constant\Enum\WmsApiErrorEnum;
+use OK\PhpEnhance\DomainObject\ServiceResultDO;
+use OK\PhpEnhance\DomainObject\SuccessResultDO;
+
+
+class OrderListBySellerIdService extends ServiceBase
+{
+    /**
+     * @var int
+     */
+    protected $sellerId;
+
+    /**
+     * @return ServiceResultDO
+     */
+    public function getRole()
+    {
+        return $this->setRoleBySellerId($this->sellerId);
+    }
+
+    /**
+     * @return ServiceResultDO
+     */
+    public function execute()
+    {
+        $orderList = Order::listBySellerId($this->sellerId);
+        return new SuccessResultDO($orderList);
+    }
+
+    /**
+     * @param int $sellerId
+     * @param int $userId
+     * @return ServiceResultDO
+     */
+    public function executeChain($sellerId = null,$userId = null)
+    {
+        $this->sellerId = $sellerId;
+        $this->userId = $userId;
+        return parent::executeChain();
+    }
+}
+        

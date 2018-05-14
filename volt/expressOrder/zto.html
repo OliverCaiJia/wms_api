@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--100*180,110-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei";
+            -webkit-text-size-adjust: none;
+        }
+
+        .print_paper {
+            border: none;
+            border-collapse: collapse;
+            width: 375px;
+            margin-top: -1px;
+            table-layout: fixed;
+        }
+
+        .print_paper td {
+            border: solid #000 1px;
+            padding: 0 5px;
+            overflow: hidden;
+        }
+
+        .table_first {
+            margin-top: 0;
+        }
+
+        .print_paper .x1 {
+            font-size: 12pt;
+            font-family: "Microsoft YaHei";
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .x4 {
+            font-size: 28pt;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+            text-align: left;
+        }
+
+        .print_paper .xx8 {
+            font-size: 16pt;
+            text-align: left;
+            font-family: "Microsoft YaHei";
+        }
+
+        .print_paper .xx10 {
+            font-size: 8pt;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+            text-align: left;
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx12 {
+            font-size: 8pt;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx14 {
+            font-size: 8pt;
+            text-align: left;
+            font-family: "Microsoft YaHei";
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx15 {
+            font-size: 8pt;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx16 {
+            font-size: 6pt;
+            text-align: left;
+            font-family: "Microsoft YaHei";
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx17 {
+            font-size: 8pt;
+            font-family: "Microsoft YaHei";
+            text-align: left;
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .print_paper .xx18 {
+            font-size: 8pt;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+            text-align: right;
+            /*-webkit-transform-origin-x: 0;*/
+            /* -webkit-transform: scale(0.67);*/
+        }
+
+        .no_border {
+            width: 100%;
+            height: 100%;
+        }
+
+        .no_border td {
+            border: none;
+            vertical-align: top;
+        }
+
+        .print_paper .fwb {
+            font-weight: bold;
+        }
+
+        .print_paper .f24 {
+            font-family: "Arial";
+            font-size: 24pt;
+        }
+
+        .print_paper .p0 {
+            padding: 0;
+        }
+
+        .print_paper .ovh {
+            overflow: hidden;
+        }
+
+        .print_paper .ov {
+            overflow: visible;
+        }
+
+        .wa {
+            width: 100%;
+        }
+
+        .h30 {
+            height: 18.9px;
+            border-bottom: 1px solid #000;
+            width: 91px;
+        }
+
+        .h31 {
+            height: 94.5px;
+            width: 91px;
+            font-size: 5pt;
+            font-family: "Microsoft YaHei";
+        }
+
+        .vt {
+            vertical-align: top;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .guge {
+                word-spacing: 0;
+                letter-spacing: 0;
+                line-height: 20px;
+                font-size: 12px;
+                height: 72px;
+                margin-top: -19px;
+                -webkit-transform-origin-x: 0;
+                -webkit-transform: scaleX(0.70);
+                -webkit-transform: scaleY(0.65);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table class="print_paper table_first" height="34">
+        <tr>
+            <td style="padding:0;">
+                <table class="no_border">
+                    <tr>
+                        <td style="vertical-align:middle;padding:0;" width="113.4">
+                            <!--<img class="logo" height="22.7" width="98.3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAMAAACioYPHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF2OjwDlWkqtLkYqjPJp/ThcTfO323////8BxFMwAABGBJREFUeNrMWItuIyEMNHbs/f8/PntsnptNe6dWOqQmARZ2GL+G0vWfN/qdbbmZLl1h/7PZmvcv7U9oQz8XCp7HiDSjFaDK91tsSBwrlN+d0ZZ3okfx0RJdi26AoIu9qY9o/MDBfB2xz1l8CNHcndq9PQKkOOuKdrcIWRx+Egi4PqjOCF6eWIS3txFACI4yENC6y9lMH5ofe2+1DXU7drZM8uwB1wE2cbqMO69M4mstX5TnFD9KGCYG40Npes0d3+vbTR+tgBe4G+RL0yyJkNPCHLjLwuE3aQWQHq5BnwjkbzflfkqwDq6clDDYRUEOgdP+QeHxfJwHg86Yx8aEMIIkvCaH5orXXzRZnO26YucMT82jU0AnrQ9Jg3H8zIBQrAjAcEHDn9tYJ8DRBkLuI93h+E1vdGmJDQaGHssaAGVlUAsg5nGKXBEAFXEieOhtHtSBbwztjiZFWa3kmuQFWBFJDXiDPMdqYXF3wArXOMtmdq58pBUelvnhBCh3fLSFKu1xu/X1nQuCIoJHw6zWUQu1yoqI90wyFi5o0wVPgO/wvRaORm9JT3PWbnGmk5Ylt+WL3L+QkgN7JmRYwH+Cakoz01f4viDQdx0DVGQsJaOMeaFYIJ/YNCaSdiXc/nr/oVVrLJd/hY/3eqGjkhwVspuNsHNQwhnLGA2QF4xrvWLYTNySzoo5ZKp4knL58qZ5nhU1L9UNOe0AuIwQc8Vyy6VcKZfSdulhsLAPqEaZyFP4koHaaFRB3QCO/LLh2w3cu3cPWDmvLDizgnCsJ3MrsHBVvax4GEwcAIAzsaOk2pM+4+sh0KNCt8q2PKCbo+hxbDuEht2kCHUHs1MzfcY3E/jevT1wHeJq0qm0B3dovIzRo86Z7cFeyfQzvoNAWjPOSqksiEvCdPwI9JAK1bQG03ltiB7icxBY6CO+q4sB2vt0PkC/K/kf8cmrvGEEeg7o3n/x795JJr5zUgUhOjVzDfQ8nV3RJwLpH5itNd2vacHnafNQ9nrmkJ51tvk+LYhArwThRrImE6c6hryIhdIKEVVBim+tC0S4J9cafJcPantodujlRbtsjUd0YFcoZwfIqV0oU084fUBmiuhMRcDImUjdBv2H26B4lpIgq6KYnvClED8igG5imjatViUr6wIyHl81knIgxYy1nJIWClrq1hJKl+vq0MswvdP6jwQu2mZIabrhIzizlJShUoZmNCRt4OGWjEbZgFAzEOncUzqHlC8+Eqh8q2JYsNzoeIsCKRoY5bZotLrHZyrgUYotM3alDmndJ9Pi+NZNITwTeIvEyLtOneqp1aT/SEHFYGiOAKjlpT0v/OrfeRnJBMK5DeUtmve7yK11J3uXCUK40E1LulTn7kDQLVYswMIMF0iPa70qhv7ClSQsTEF0Wl/6cX+uBGSBwtnztq5WSqXu855kDJqmP+EAkXUk5AtcMJ7Dfx9yp58F6IQWqXT/z1TqCeqJmLY6Rn3+OmZ+8b9bP9f+CDAArxpZlkAmC74AAAAASUVORK5CYII=" alt="" /></td>-->
+                        <td style="vertical-align:middle;">&nbsp;</td>
+                        <td style="vertical-align:middle;text-align:right;" class="x1"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper">
+        <tr>
+            <td style="padding-left: 6px;" width="362.5" height="56.7" class="x4">
+                {{markDestination}}
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper" height="37.8">
+        <tr>
+            <td width="279" style="padding:0;" class="xx8">
+
+            </td>
+            <td width="91" style="padding:0;">
+                {{sendTime}}
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="print_paper">
+        <tr>
+            <td style="padding:0;" width="19" height="68" class="xx15">收<br />件</td>
+            <td style="padding:0;" width="261" height="68" class="xx10">
+                {{consigneeName}}  {{consigneePhone}}<br />
+                {{consigneeProvince}} {{consigneeCity}} {{consigneeDistrict}} {{consigneeAddress}}
+            </td>
+            <td class="vt" style="padding:0;" rowspan="2">
+                <div class="wa h30 xx12">服务</div>
+                <div class="wa h31"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:0;" width="19" height="45.4" class="xx15">寄件</td>
+            <td style="padding:0;" width="261" height="45.4" class="xx14">
+                {{senderName}}  {{senderPhone}}<br />
+                {{senderProvince}} {{senderCity}} {{senderDistrict}} {{senderAddress}}
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper" height="94.5">
+        <tr>
+            <td style="text-align:center;padding-left: 20px;">
+                <div width="264.6" height="68">{{barCodeBig}}</div>
+                {{expressSn}}
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper">
+        <tr>
+            <td width="196" style="padding-left: 6px;" class="xx16" height="76.8">
+                <div>快件送达收件人地址，经收件人或收件人（寄件人）允许的代收人签字，视为送达。您的签字代表您已验收此包裹，并已确认商品信息无误、包装完好、没有划痕、破损等表面质量问题。</div>
+            </td>
+            <td width="162.3" style="padding:0;" class="xx17" height="71.8">
+                签收人：<br /><br />时间:
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper table_first">
+        <tr>
+            <td style="padding:0;">
+                <table class="no_border">
+                    <tr>
+                        <td style="vertical-align:middle;padding:0;" width="113.4" height="50">
+                            <!--<img class="logo" height="22" width="98.3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAMAAACioYPHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF2OjwDlWkqtLkYqjPJp/ThcTfO323////8BxFMwAABGBJREFUeNrMWItuIyEMNHbs/f8/PntsnptNe6dWOqQmARZ2GL+G0vWfN/qdbbmZLl1h/7PZmvcv7U9oQz8XCp7HiDSjFaDK91tsSBwrlN+d0ZZ3okfx0RJdi26AoIu9qY9o/MDBfB2xz1l8CNHcndq9PQKkOOuKdrcIWRx+Egi4PqjOCF6eWIS3txFACI4yENC6y9lMH5ofe2+1DXU7drZM8uwB1wE2cbqMO69M4mstX5TnFD9KGCYG40Npes0d3+vbTR+tgBe4G+RL0yyJkNPCHLjLwuE3aQWQHq5BnwjkbzflfkqwDq6clDDYRUEOgdP+QeHxfJwHg86Yx8aEMIIkvCaH5orXXzRZnO26YucMT82jU0AnrQ9Jg3H8zIBQrAjAcEHDn9tYJ8DRBkLuI93h+E1vdGmJDQaGHssaAGVlUAsg5nGKXBEAFXEieOhtHtSBbwztjiZFWa3kmuQFWBFJDXiDPMdqYXF3wArXOMtmdq58pBUelvnhBCh3fLSFKu1xu/X1nQuCIoJHw6zWUQu1yoqI90wyFi5o0wVPgO/wvRaORm9JT3PWbnGmk5Ylt+WL3L+QkgN7JmRYwH+Cakoz01f4viDQdx0DVGQsJaOMeaFYIJ/YNCaSdiXc/nr/oVVrLJd/hY/3eqGjkhwVspuNsHNQwhnLGA2QF4xrvWLYTNySzoo5ZKp4knL58qZ5nhU1L9UNOe0AuIwQc8Vyy6VcKZfSdulhsLAPqEaZyFP4koHaaFRB3QCO/LLh2w3cu3cPWDmvLDizgnCsJ3MrsHBVvax4GEwcAIAzsaOk2pM+4+sh0KNCt8q2PKCbo+hxbDuEht2kCHUHs1MzfcY3E/jevT1wHeJq0qm0B3dovIzRo86Z7cFeyfQzvoNAWjPOSqksiEvCdPwI9JAK1bQG03ltiB7icxBY6CO+q4sB2vt0PkC/K/kf8cmrvGEEeg7o3n/x795JJr5zUgUhOjVzDfQ8nV3RJwLpH5itNd2vacHnafNQ9nrmkJ51tvk+LYhArwThRrImE6c6hryIhdIKEVVBim+tC0S4J9cafJcPantodujlRbtsjUd0YFcoZwfIqV0oU084fUBmiuhMRcDImUjdBv2H26B4lpIgq6KYnvClED8igG5imjatViUr6wIyHl81knIgxYy1nJIWClrq1hJKl+vq0MswvdP6jwQu2mZIabrhIzizlJShUoZmNCRt4OGWjEbZgFAzEOncUzqHlC8+Eqh8q2JYsNzoeIsCKRoY5bZotLrHZyrgUYotM3alDmndJ9Pi+NZNITwTeIvEyLtOneqp1aT/SEHFYGiOAKjlpT0v/OrfeRnJBMK5DeUtmve7yK11J3uXCUK40E1LulTn7kDQLVYswMIMF0iPa70qhv7ClSQsTEF0Wl/6cX+uBGSBwtnztq5WSqXu855kDJqmP+EAkXUk5AtcMJ7Dfx9yp58F6IQWqXT/z1TqCeqJmLY6Rn3+OmZ+8b9bP9f+CDAArxpZlkAmC74AAAAASUVORK5CYII=" alt="" />-->
+                        </td>
+                        <td style="vertical-align:middle;padding:0;" height="50">&nbsp;</td>
+                        <td style="vertical-align:middle;text-align:center;padding:0;" height="50" width="257">
+                            <div height="35" width="151.2" style="padding-left: 45px;">{{barCodeSmall}}</div>
+                            {{expressSn}}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="print_paper ">
+        <tr>
+            <td style="padding:0;" width="20" height="45" class="xx15">收件</td>
+            <td width="352" height="45.5" style="padding:0;" class="xx14">
+                {{consigneeName}}  {{consigneePhone}}<br />
+                {{consigneeProvince}} {{consigneeCity}} {{consigneeDistrict}} {{consigneeAddress}}
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:0;" width="20" height="45" class="xx15">寄件</td>
+            <td width="352" height="45.5" style="padding:0;" class="xx14">
+                {{senderName}}  {{senderPhone}}<br />
+                {{senderProvince}} {{senderCity}} {{senderDistrict}} {{senderAddress}}
+            </td>
+        </tr>
+        <tr>
+            <td height="98" colspan="2" style="padding:0;">
+                <table class="no_border">
+                    <tr>
+                        <td style="padding:0;" height="90%" width="370" class="xx10">
+                            <!--商家自定义区-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 6px;" width="370" class="xx18">
+                            已检视
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
