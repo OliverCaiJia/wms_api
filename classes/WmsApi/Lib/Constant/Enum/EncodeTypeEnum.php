@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wangpeng
- * Date: 17/6/15
- * Time: 下午4:41
- */
 
 namespace WmsApi\Lib\Constant\Enum;
 

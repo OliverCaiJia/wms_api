@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wangpeng
- * Date: 17/3/27
- * Time: 上午10:22
- */
 
 use OK\PhalconEnhance\Constant\BuiltinKey;
 

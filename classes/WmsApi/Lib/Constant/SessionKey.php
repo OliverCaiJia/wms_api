@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wangpeng
- * Date: 17/2/21
- * Time: 上午10:13
- */
 
 namespace WmsApi\Lib\Constant;
 

@@ -1,6 +1,6 @@
 # wms_api
 
-Flash Express wms api
+wms api
 
 
 
@@ -27,7 +27,7 @@ git上的所有代码，暂时clone到`/opt/ok/`下
 
 * user: web
 * hosts: bo.ok.com
-* password: 8xEHaHnIvw
+* password: 8xEHnIvw
 * DB name: wms
 
 > hosts在最后
@@ -41,20 +41,20 @@ git上的所有代码，暂时clone到`/opt/ok/`下
 ~~~~
 server {
 	listen 80;
-	server_name flash.wms.com; 
-	set $FLASH_WMS_FE_ROOT /opt/ok/wms_fe;
+	server_name wms.com; 
+	set $FE_ROOT /opt/ok/wms_fe;
 	location / {
-                root $FLASH_WMS_FE_ROOT/wwwroot/;
+                root $WMS_FE_ROOT/wwwroot/;
                 index index.html index.htm;
         }
 
     location ~ /(fonts|slim|bower|bower_components)/ {
-                root $FLASH_WMS_FE_ROOT/static/;
+                root $WMS_FE_ROOT/static/;
                 index index.html index.htm;
         }
 
 	location /upload/ {
-		root $FLASH_WMS_FE_ROOT/;
+		root $FE_ROOT/;
 		 index index.html index.htm;
 
         }
@@ -80,13 +80,13 @@ server {
 
 3、`wms_api`API的配置
 
-git地址：`https://git.opskitchen.com/FlashExpressWms/openapi.git`
+git地址：`https://git.opsen.com/Wms/openapi.git`
 
 ~~~~
 server {
 	listen 80;
-	server_name wms-api.wms.com;
-	root /opt/ok/flash_openapi/entrances/web/gateway;
+	server_name wmsapi.wms.com;
+	root /opt/ok/openapi/entrances/web/gateway;
 	index index.php;
 	gzip on;
 	gzip_types application/json application/javascript;
@@ -103,12 +103,12 @@ server {
 ### hosts绑定
 
 ~~~~~~
-47.96.7.107 i18n.ok.com
-47.96.7.107 bo.ok.com
-47.96.7.107 i18n.strings.tech
+47.9.7.17 i18n.ok.com
+47.9.7.17 bo.ok.com
+47.9.7.17 i18n.strings.tech
 
-192.168.56.101 flash.wms.com
-192.168.56.101 flash-api.wms.com
+192.168.56.121 ss.wms.com
+192.168.56.121 ss-api.wms.com
 
 ~~~~~~
 

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wangpeng
- * Date: 17/5/10
- * Time: 上午9:41
- */
 
 namespace WmsApi\Lib\DomainObject;
 

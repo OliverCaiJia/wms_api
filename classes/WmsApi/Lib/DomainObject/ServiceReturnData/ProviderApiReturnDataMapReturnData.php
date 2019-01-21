@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wangpeng
- * Date: 17/5/18
- * Time: 下午1:40
- */
 
 namespace WmsApi\Lib\DomainObject\ServiceReturnData;
 
